@@ -17,4 +17,6 @@ routes.get('/devs', DevController.index);
 
 routes.get('/search', SearchController.index);
 
+routes.get('/', (req, res) => res.send('Servidor ligado!!'));
+
 module.exports = routes;
